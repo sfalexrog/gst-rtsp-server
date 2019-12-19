@@ -1,0 +1,29 @@
+Source: gst-rtsp-server
+Section: misc
+Priority: optional
+Maintainer: sfalexrog <sfalexrog@gmail.com>
+Build-Depends: dephelper-compat (= 12),
+               gstreamer1.0-plugins-rtp,
+               gstreamer1.0-rtsp,
+               libglib2.0-dev,
+               libgstreamer1.0-dev,
+               libgstreamer-plugins-bad1.0-dev,
+               libgstreamer-plugins-base1.0-dev,
+               meson (>= 0.46),
+               ninja-build
+Standards-Version: 4.4.0
+Homepage: https://github.com/GStreamer/gst-rtsp-server
+Vcs-Git: https://github.com/GStreamer/gst-rtsp-server.git
+Vcs-Browser: https://github.com/GStreamer/gst-rtsp-server
+
+Package: gst-rtsp-server
+Architecture: any
+Depends: gstreamer1.0-plugins-bad,
+         gstreamer1.0-plugins-base,
+         libglib2.0-0,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: GStreamer rtsp server
+ RTSP is a real-time multimedia transmission protocol.
+ This package provides a reference implementation for it
+ with GStreamer.
