@@ -2,7 +2,7 @@ Source: gst-rtsp-server
 Section: misc
 Priority: optional
 Maintainer: sfalexrog <sfalexrog@gmail.com>
-Build-Depends: dephelper-compat (= 12),
+Build-Depends: debhelper (>= 12),
                gstreamer1.0-plugins-rtp,
                gstreamer1.0-rtsp,
                libglib2.0-dev,
