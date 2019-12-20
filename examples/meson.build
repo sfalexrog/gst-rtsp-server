@@ -33,3 +33,9 @@ if cgroup_dep.found()
     dependencies : [glib_dep, gst_dep, gstnet_dep, gst_rtsp_server_dep, cgroup_dep],
     install: false)
 endif
+
+executable('gst-rtsp-launch-1.0', 'test-launch.c',
+  c_args: rtspserver_args,
+  include_directories: rtspserver_incs,
+  dependencies: [glib_dep, gst_dep, gstnet_dep, gst_rtsp_server_dep],
+  install: true)
